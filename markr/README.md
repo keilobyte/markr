@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Approach
 
-## Getting Started
+I input the Markr overview paragraph from the brief into Claude to generate the content for each of the requested sections in of the landing page.
 
-First, run the development server:
+I also asked Claude to create a company logo that I could use for the landing page, and used the first logo it generated for me in SVG format. I used fontawesome.com to grab some free icons for the Features section.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+From here, I grabbed a Webflow boilerplate figma file so that I could get off the blocks fast, creating the sections I needed to fulfil the brief.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once I had created the landing page in Figma, I used the 'Figma to Webflow' tool to generate the code. I pasted this into Webflow and manually adjusted/replaced items so format/work correctly (form elements etc had to be replaced in Webflow for example).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I installed NextJS using the recommended out-of-box config, and then manually created the HTML structure, using BEM naming conventions. I used VS Code and had Copilot on to help speed up autocompleting code as I went through.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+SCSS wasn't working OOB for me, so used vanilla CSS code to style the page, using shared class names to move through as quickly as possible. 
